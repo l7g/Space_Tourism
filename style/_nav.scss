@@ -27,7 +27,7 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          color: #d0d6f9;
+          color: white;
           z-index: 1;
           backdrop-filter: blur(10px);
           .step {
@@ -36,6 +36,9 @@ body {
             font-family: $font-barlow;
             font-size: 14px;
             letter-spacing: 2.35px;
+            span{
+              font-weight: 600;
+            }
           }
         }
       }

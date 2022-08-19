@@ -1,13 +1,18 @@
 //Impostazione sfondi
 const homeContainer = document.querySelector('body');
 const initialBgImg = '../starter-code/assets/home/background-home-desktop.jpg';
-const destinatonBgImg = '../starter-code/assets/destination/background-destination-desktop.jpg'
+const destinatonBgImg = '../starter-code/assets/destination/background-destination-desktop.jpg';
+const crewBgImg = '../starter-code/assets/crew/background-crew-desktop.jpg'
 function setHomeBg(){
     let url = initialBgImg;
     homeContainer.style.backgroundImage = `url(${url})`;
 }
 function setDestinationBg(){
     let url = destinatonBgImg;
+    homeContainer.style.backgroundImage = `url(${url})`;
+}
+function setCrewBg(){
+    let url = crewBgImg;
     homeContainer.style.backgroundImage = `url(${url})`;
 }
 window.addEventListener('DOMContentLoaded', setHomeBg);
@@ -18,8 +23,10 @@ currentStep.style.borderBottom = "2px solid white";
 //definizione pagine
 const homePage = document.querySelector('.main');
 const destinationPage = document.querySelector('.destination');
+const crewPage = document.querySelector('.crew');
 //setting homepage come pagine visibile al lancio
 destinationPage.style.display = 'none';
+crewPage.style.display = 'none';
 //Funzione borders
 function stepsBorder(id) {
     let prevStep = currentStep;
@@ -41,6 +48,12 @@ function stepsSelector(id){
         setDestinationBg();
     } else {
         destinationPage.style.display = 'none';
+    }
+    if (currentStep == document.querySelector('#s02')) {
+        crewPage.style.display = 'flex';
+        setCrewBg();
+    } else {
+        crewPage.style.display = 'none';
     }
 }
 

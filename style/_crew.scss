@@ -1,0 +1,65 @@
+body {
+  height: 100%;
+  width: 100%;
+  .content-container {
+    height: 100%;
+    width: 100%;
+    .crew {
+      padding: 70px 150px;
+      display: flex;
+      justify-content: space-around;
+      &-info {
+        display: flex;
+        flex-direction: column;
+        &-index {
+          display: flex;
+          padding-bottom: 40px;
+          font-family: $font-barlow;
+          font-size: 28px;
+          text-transform: uppercase;
+          font-weight: 300;
+          &-number {
+            font-weight: 600;
+            transform: translate(-10px, 0);
+            padding-right: 10px;
+            color: rgb(105, 104, 104);
+          }
+          &-title {
+            color: white;
+          }
+        }
+        &-role {
+          padding-top: 120px;
+          font-family: $font-bellefair;
+          font-size: 32px;
+          text-transform: uppercase;
+          color: rgba($color: white, $alpha: .4);
+        }
+        &-name{
+          padding-top: 20px;
+          font-family: $font-bellefair;
+          font-size: 56px;
+          text-transform: uppercase;
+          color: white;
+        }
+        &-description{
+          padding-top: 80px;
+          color: #d0d6f9;
+          width: 70%;
+          letter-spacing: 2px;
+        }
+        &-selector{
+          display: flex;
+          padding: 50px 120px;
+          .circle {
+            height: 20px;
+            width: 20px;
+            margin: 0 10px;
+            background-color: rgba($color: white, $alpha: 0.4);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 body {
@@ -74,6 +74,7 @@ body .content-container .main-button {
 
 body .content-container .main-button button {
   border-style: none;
+  background: white;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -179,7 +180,7 @@ body .content-container .nav-steps {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #d0d6f9;
+  color: white;
   z-index: 1;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -191,6 +192,10 @@ body .content-container .nav-steps .step {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
   letter-spacing: 2.35px;
+}
+
+body .content-container .nav-steps .step span {
+  font-weight: 600;
 }
 
 body {
@@ -237,7 +242,8 @@ body .content-container .destination-aside-title-number {
   -webkit-transform: translate(-10px, 0);
           transform: translate(-10px, 0);
   padding-right: 10px;
-  color: #474646;
+  color: #696868;
+  font-weight: 600;
 }
 
 body .content-container .destination-aside-title-detail {
@@ -320,5 +326,95 @@ body .content-container .destination-info-data-item .dataNum {
   color: white;
   font-family: "Bellefair", serif;
   font-weight: 100;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body .content-container {
+  height: 100%;
+  width: 100%;
+}
+
+body .content-container .crew {
+  padding: 70px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .content-container .crew-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .content-container .crew-info-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+body .content-container .crew-info-index-number {
+  font-weight: 600;
+  -webkit-transform: translate(-10px, 0);
+          transform: translate(-10px, 0);
+  padding-right: 10px;
+  color: #696868;
+}
+
+body .content-container .crew-info-index-title {
+  color: white;
+}
+
+body .content-container .crew-info-role {
+  padding-top: 120px;
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+body .content-container .crew-info-name {
+  padding-top: 20px;
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: white;
+}
+
+body .content-container .crew-info-description {
+  padding-top: 80px;
+  color: #d0d6f9;
+  width: 70%;
+  letter-spacing: 2px;
+}
+
+body .content-container .crew-info-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 120px;
+}
+
+body .content-container .crew-info-selector .circle {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
