@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <script type="text/javascript" src="../script/script.js" defer></script>
+    <script src="../script/data.js"></script>
+    <script src="../script/destination.js" defer></script>
+    <script src="../script/crew.js" defer></script>
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="nav">
+        <div class="nav-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path
+                fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="nav-line"></div>
+        <div class="nav-steps">
+          <div class="step s00" id="s00"><span>00</span> Home</div>
+          <div class="step s01" id="s01"><span>01</span> Destination</div>
+          <div class="step s02" id="s02"><span>02</span> Crew</div>
+          <div class="step s03" id="s03"><span>03</span> Technology</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main-title">
+          <div class="main-title-intro">SO, YOU WANT TO TRAVEL TO</div>
+          <div class="main-title-big">SPACE</div>
+          <div class="main-title-info">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </div>
+        </div>
+        <div class="main-button"><button>EXPLORE</button></div>
+      </div>
+      <div class="destination">
+        <div class="destination-aside">
+          <div class="destination-aside-title">
+            <div class="destination-aside-title-number">01</div>
+            <div class="destination-aside-title-detail">
+              Pick your destination
+            </div>
+          </div>
+          <div class="destination-aside-planet-img">
+            <img
+              src="../starter-code/assets/destination/image-moon.png"
+              alt="moon"
+            />
+          </div>
+        </div>
+        <div class="destination-info">
+          <div class="destination-info-selector">
+            <div class="planet" id="moon">Moon</div>
+            <div class="planet" id="mars">Mars</div>
+            <div class="planet" id="europa">Europa</div>
+            <div class="planet" id="titan">Titan</div>
+          </div>
+          <div class="destination-info-planet">Moon</div>
+          <div class="destination-info-more">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </div>
+          <div class="destination-info-data">
+            <div
+              class="destination-info-data-avgDist destination-info-data-item"
+            >
+              <div class="title">avg. distance</div>
+              <div class="dataNum planet-distance">384,400KM</div>
+            </div>
+            <div
+              class="destination-info-data-avgTime destination-info-data-item"
+            >
+              <div class="title">est. travel time</div>
+              <div class="dataNum planet-travel-time">3 Days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="crew">
+        <div class="crew-info">
+          <div class="crew-info-index">
+            <div class="crew-info-index-number">02</div>
+            <div class="crew-info-index-title">Meet your crew</div>
+          </div>
+          <div class="crew-info-role">commander</div>
+          <div class="crew-info-name">Douglas hurley</div>
+          <div class="crew-info-description">
+            Douglas Gerald Hurley is an American engineer, former Marine Corps
+            pilot and former NASA astronaut. He launched into space for the
+            third time as commander of Crew Dragon Demo-2.
+          </div>
+          <div class="crew-info-selector">
+            <div class="circle" id="c0"></div>
+            <div class="circle" id="c1"></div>
+            <div class="circle" id="c2"></div>
+            <div class="circle" id="c3"></div>
+          </div>
+        </div>
+        <div class="crew-image">
+          <img src="../starter-code/assets/crew/image-douglas-hurley.png" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
