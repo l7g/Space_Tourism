@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css" />
-    <script src="../script/script.js" defer></script>
+    <script type="text/javascript" src="../script/script.js" defer></script>
+    <script src="../script/data.js"></script>
+    <script src="../script/destination.js" defer></script>
+    <script src="../script/crew.js" defer></script>
   </head>
   <body>
-    <div class="home-container">
+    <div class="content-container">
       <div class="nav">
         <div class="nav-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -42,6 +45,47 @@
           </div>
         </div>
         <div class="main-button"><button>EXPLORE</button></div>
+      </div>
+      <div class="destination">
+        <div class="destination-aside">
+          <div class="destination-aside-title">
+            <div class="destination-aside-title-number">01</div>
+            <div class="destination-aside-title-detail">
+              Pick your destination
+            </div>
+          </div>
+          <div class="destination-aside-planet-img">
+            <img
+              src="../starter-code/assets/destination/image-moon.png"
+              alt="moon"
+            />
+          </div>
+        </div>
+        <div class="destination-info">
+          <div class="destination-info-selector">
+            <div class="planet" id="moon">Moon</div>
+            <div class="planet" id="mars">Mars</div>
+            <div class="planet" id="europa">Europa</div>
+            <div class="planet" id="titan">Titan</div>
+          </div>
+          <div class="destination-info-planet">Moon</div>
+          <div class="destination-info-more">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </div>
+          <div class="destination-info-data">
+            <div class="destination-info-data-avgDist destination-info-data-item">
+              <div class="title">avg. distance</div>
+              <div class="dataNum planet-distance">384,400KM</div>
+            </div>
+            <div class="destination-info-data-avgTime destination-info-data-item">
+              <div class="title">est. travel time</div>
+              <div class="dataNum planet-travel-time">3 Days</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -2,7 +2,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  .home-container {
+  .content-container {
     height: 100%;
     width: 100%;
     .main {
@@ -48,6 +48,7 @@ body {
           &:hover {
             animation-name: explore;
             animation-duration: 4s;
+            animation-iteration-count: infinite;
           }
         }
       }
@@ -65,8 +66,8 @@ body {
     width: 215px;
   }
   75%{
-    height: 200px;
-    width: 200px;
+    height: 190px;
+    width: 190px;
   }
   100%{
     height: 250px;
