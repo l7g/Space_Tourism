@@ -51,6 +51,7 @@ body .home-container .main-title-big {
 body .home-container .main-title-info {
   color: white;
   max-width: 600px;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 body .home-container .main-button {

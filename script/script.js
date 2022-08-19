@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', setHomeBg);
 
 //Event listener per selezione navbar
 let currentStep = document.querySelector('#s00');
+const homePage = document.querySelector('.main');
 currentStep.style.borderBottom = "2px solid white";
 console.log(currentStep.id)
 function stepsBorder(id) {
@@ -16,6 +17,11 @@ function stepsBorder(id) {
     currentStep = document.querySelector(`#${id}`);
     currentStep.style.borderBottom = "2px solid white";
     prevStep.style.border = 'none';
+    if (currentStep != document.querySelector('#s00')) {
+        homePage.style.display = 'none';
+    } else {
+        homePage.style.display = 'flex';
+    }
 }
 const steps = document.querySelectorAll('.step');
 steps.forEach(step => step.addEventListener('click', (e) => {
