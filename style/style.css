@@ -65,7 +65,7 @@ body .home-container .nav-steps {
 }
 
 body .home-container .nav-steps .step {
-  padding: 20px;
+  padding: 40px 20px;
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
