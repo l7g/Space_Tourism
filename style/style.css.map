@@ -6,7 +6,8 @@
         "_home.scss",
         "_fonts.scss",
         "_nav.scss",
-        "_destination.scss"
+        "_destination.scss",
+        "_crew.scss"
     ],
     "names": [],
     "file": "style.css"
