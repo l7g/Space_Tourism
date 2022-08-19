@@ -14,7 +14,6 @@ function planetsBorders(id){
 
 //Funzione caricamento dinamico dati pianeti
 const planetsDestinationData = toInsertData.destinations;
-console.log(planetsDestinationData);
 //Definizione div contenuti
 const planetImgFirst = document.querySelector('.destination-aside-planet-img');
 const planetImg = planetImgFirst.querySelector('img');
