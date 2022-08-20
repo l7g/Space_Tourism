@@ -1,0 +1,79 @@
+body {
+    height: 100%;
+    width: 100%;
+    .content-container {
+      height: 100%;
+      width: 100%;
+      .tech{
+        display: flex;
+        padding: 70px 100px;
+        &-info {
+            display: flex;
+            flex-direction: column;
+            &-title {
+                display: flex;
+                padding-bottom: 40px;
+                font-family: $font-barlow;
+                font-size: 28px;
+                text-transform: uppercase;
+                font-weight: 300;
+                &-number {
+                    font-weight: 600;
+                    transform: translate(-10px, 0);
+                    padding-right: 10px;
+                    color: rgb(105, 104, 104);
+                }
+                &-detail {
+                    color: white;
+                }
+            }
+            &-main {
+                display: flex;
+                &-selector {
+                    display: flex;
+                    flex-direction: column;
+                    transform: translate(-20px, 0);
+                    .bubble {
+                        margin: 20px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:white;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+                &-description {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 70px;
+                    &-title {
+                        font-family: $font-barlow;
+                        font-size: 14px;
+                        letter-spacing: 2.37px;
+                        color: #d0d6f9;
+                        padding: 30px 0 10px 0;
+                    }
+                    &-name {
+                        font-family: $font-bellefair;
+                        font-size: 56px;
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                    &-more {
+                        padding-top: 30px;
+                        color: #d0d6f9;
+                        width: 70%;
+                        letter-spacing: 2px;
+                    }
+                }
+            } 
+        }
+        .tech-img {
+            transform: translate(0, -40px);
+        }
+      }
+    }
+}

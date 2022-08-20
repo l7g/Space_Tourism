@@ -417,4 +417,128 @@ body .content-container .crew-info-selector .circle {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
 }
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body .content-container {
+  height: 100%;
+  width: 100%;
+}
+
+body .content-container .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 100px;
+}
+
+body .content-container .tech-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .content-container .tech-info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+body .content-container .tech-info-title-number {
+  font-weight: 600;
+  -webkit-transform: translate(-10px, 0);
+          transform: translate(-10px, 0);
+  padding-right: 10px;
+  color: #696868;
+}
+
+body .content-container .tech-info-title-detail {
+  color: white;
+}
+
+body .content-container .tech-info-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content-container .tech-info-main-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(-20px, 0);
+          transform: translate(-20px, 0);
+}
+
+body .content-container .tech-info-main-selector .bubble {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+body .content-container .tech-info-main-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 70px;
+}
+
+body .content-container .tech-info-main-description-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.37px;
+  color: #d0d6f9;
+  padding: 30px 0 10px 0;
+}
+
+body .content-container .tech-info-main-description-name {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: white;
+}
+
+body .content-container .tech-info-main-description-more {
+  padding-top: 30px;
+  color: #d0d6f9;
+  width: 70%;
+  letter-spacing: 2px;
+}
+
+body .content-container .tech .tech-img {
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
+}
 /*# sourceMappingURL=style.css.map */

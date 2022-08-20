@@ -9,6 +9,8 @@ function bgCrewSelector(id) {
   prevSelector.style.background = "rgba(255, 255, 255, .4)";
 }
 
+
+
 //inserimento dinamico dati crew members
 const crewMembersData = toInsertData.crew;
 console.log(crewMembersData);
@@ -38,3 +40,27 @@ circles.forEach((circle) =>
     crewDetails(e.target.id);
   })
 );
+
+//Funzioni mouseover e mouse out selezione tech
+function mouseoverEffectCrew(id){
+  let currCirc = document.querySelector(`#${id}`);
+  if (currCirc.style.background != 'white') {
+     currCirc.style.background = "rgba(255, 255, 255, .7)";
+  }
+  
+}
+circles.forEach(circle => circle.addEventListener('mouseover', (e) => {
+  mouseoverEffectCrew(e.target.id)
+}))
+
+//mouseout
+function mouseOutEffectCrew(id){
+  let currCirc = document.querySelector(`#${id}`);
+  if (currCirc != currentCrewSelector) {
+      currCirc.style.background = "rgba(255, 255, 255, .4)";
+  }
+}
+
+circles.forEach(circle => circle.addEventListener('mouseout', (e) => {
+  mouseOutEffectCrew(e.target.id)
+}))
