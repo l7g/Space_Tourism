@@ -2,7 +2,8 @@
 const homeContainer = document.querySelector('body');
 const initialBgImg = '../starter-code/assets/home/background-home-desktop.jpg';
 const destinatonBgImg = '../starter-code/assets/destination/background-destination-desktop.jpg';
-const crewBgImg = '../starter-code/assets/crew/background-crew-desktop.jpg'
+const crewBgImg = '../starter-code/assets/crew/background-crew-desktop.jpg';
+const techBgImg = '../starter-code/assets/technology/background-technology-desktop.jpg';
 function setHomeBg(){
     let url = initialBgImg;
     homeContainer.style.backgroundImage = `url(${url})`;
@@ -15,6 +16,10 @@ function setCrewBg(){
     let url = crewBgImg;
     homeContainer.style.backgroundImage = `url(${url})`;
 }
+function setTechBg(){
+    let url = techBgImg;
+    homeContainer.style.backgroundImage = `url(${url})`;
+}
 window.addEventListener('DOMContentLoaded', setHomeBg);
 
 //Event listener per selezione navbar
@@ -24,9 +29,11 @@ currentStep.style.borderBottom = "2px solid white";
 const homePage = document.querySelector('.main');
 const destinationPage = document.querySelector('.destination');
 const crewPage = document.querySelector('.crew');
+const techPage = document.querySelector('.tech');
 //setting homepage come pagine visibile al lancio
 destinationPage.style.display = 'none';
 crewPage.style.display = 'none';
+techPage.style.display = 'none';
 //Funzione borders
 function stepsBorder(id) {
     let prevStep = currentStep;
@@ -54,6 +61,12 @@ function stepsSelector(id){
         setCrewBg();
     } else {
         crewPage.style.display = 'none';
+    }
+    if (currentStep == document.querySelector('#s03')) {
+        techPage.style.display = 'flex';
+        setTechBg();
+    } else {
+        techPage.style.display = 'none';
     }
 }
 
